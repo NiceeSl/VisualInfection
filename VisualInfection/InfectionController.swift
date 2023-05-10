@@ -10,11 +10,8 @@ import UIKit
 class InfectionController: UIViewController {
     
     @IBOutlet weak var infectedLAbel: UILabel!
-    @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var infectedNumberLabel: UILabel!
-    @IBAction func backAction(_ sender: UIButton) {
-        infoView.isHidden = true
-    }
+
     let queue = DispatchQueue(label: "com.example.myqueue")
     
     var timer: Timer?
@@ -22,7 +19,6 @@ class InfectionController: UIViewController {
     var groupSize: Int!
     var infectionFactor: Int!
     var updatingPeriod: Int!
-    
     
     var coloredPoints = Set<UIView>()
     var infectedCount: Int = 0
@@ -46,9 +42,6 @@ class InfectionController: UIViewController {
         scrollView.delaysContentTouches = false
 
         view.addSubview(scrollView)
-        infoView.isHidden = true
-        infoView.layer.cornerRadius = 15
-        view.addSubview(infoView)
         view.addSubview(infectedLAbel)
         view.addSubview(infectedNumberLabel)
         let screenSize = UIScreen.main.bounds.size
@@ -87,9 +80,6 @@ class InfectionController: UIViewController {
 
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
             point.addGestureRecognizer(tapGesture)
-            let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
-            point.addGestureRecognizer(longPressGesture)
-            
         }
         
     }
@@ -152,36 +142,13 @@ class InfectionController: UIViewController {
                     }
                 }
                 
-                // Update the infected count
                 infectedCount += nextPoints.count
                 DispatchQueue.main.async {
-//                    self.infectedCount = self.infectedCount
                     self.infectedNumberLabel.text = "\(self.infectedCount)"
                 }
                 
-                // Replace the old coloredPoints with the new ones
                 coloredPoints = nextPoints
             }
         }
-
-    
-    @objc func handleLongPress(_ gesture: UILongPressGestureRecognizer) {
-        guard let point = gesture.view else { return }
-        if gesture.state == .began {
-            longPressTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
-                print("Long press detected!")
-                self.infoView.isHidden = false
-                if point.backgroundColor != .red {
-                            point.backgroundColor = .red
-                            print("Point is now red")
-                        } else {
-                            print("Point is already red")
-                        }
-            }
-        } else if gesture.state == .ended {
-            longPressTimer?.invalidate()
-            longPressTimer = nil
-        }
-    }
 
 }

@@ -59,16 +59,6 @@ class InputScreenController: UIViewController, UITextFieldDelegate {
         else {
             updatingPeriod = 1
         }
-//        let destinationController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfectionController") as! InfectionController
-//        destinationController.groupSize = groupSize
-//        destinationController.infectionFactor = infectionFactor
-//        destinationController.updatingPeriod = updatingPeriod
-//
-//        print("GroupSize = \(String(describing: groupSize))")
-//        print("InfectionFactor = \(String(describing: infectionFactor))")
-//        print("UpdatingPeriod = \(String(describing: updatingPeriod))")
-//        self.navigationController?.pushViewController(InfectionController(), animated: true)
-
     }
     
     @objc func keyboardWillShowNotification(notification: Notification) {

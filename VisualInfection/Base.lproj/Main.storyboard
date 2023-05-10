@@ -168,27 +168,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" restorationIdentifier="InfoView" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-Sb-Ymo" customClass="InfoView" customModule="VisualInfection" customModuleProvider="target">
-                                <rect key="frame" x="20" y="658" width="374" height="218"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uS-uT-QYb">
-                                        <rect key="frame" x="320" y="8" width="46" height="34"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
-                                            <color key="baseForegroundColor" red="1" green="0.27843138579999999" blue="0.270588249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="backAction:" destination="I3Y-4n-a4H" eventType="touchUpInside" id="l5S-Ua-iuv"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.5411764979" green="0.5411764979" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="9uS-uT-QYb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dvy-Sb-Ymo" secondAttribute="leading" constant="20" symbolic="YES" id="41Y-ha-aW4"/>
-                                    <constraint firstItem="9uS-uT-QYb" firstAttribute="top" secondItem="dvy-Sb-Ymo" secondAttribute="topMargin" id="Fcz-bN-2tk"/>
-                                    <constraint firstItem="9uS-uT-QYb" firstAttribute="trailing" secondItem="dvy-Sb-Ymo" secondAttribute="trailingMargin" id="mH0-wi-G77"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-tZ-4eS">
                                 <rect key="frame" x="158" y="56" width="98" height="25"/>
                                 <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="20"/>
@@ -207,19 +186,14 @@
                         <constraints>
                             <constraint firstItem="HJi-6E-GU8" firstAttribute="trailing" secondItem="hhn-jw-5fx" secondAttribute="trailing" constant="85" id="13Y-AV-Irw"/>
                             <constraint firstItem="hhn-jw-5fx" firstAttribute="top" secondItem="HJi-6E-GU8" secondAttribute="top" constant="56" id="1Wo-91-SDi"/>
-                            <constraint firstItem="HJi-6E-GU8" firstAttribute="trailing" secondItem="dvy-Sb-Ymo" secondAttribute="trailing" constant="20" id="3Xk-ae-c8e"/>
                             <constraint firstItem="fdG-tZ-4eS" firstAttribute="centerX" secondItem="HJi-6E-GU8" secondAttribute="centerX" id="4sV-4E-43n"/>
-                            <constraint firstItem="dvy-Sb-Ymo" firstAttribute="top" secondItem="HJi-6E-GU8" secondAttribute="top" constant="658" id="Gdd-B0-Y6d"/>
                             <constraint firstItem="hhn-jw-5fx" firstAttribute="leading" secondItem="fdG-tZ-4eS" secondAttribute="trailing" constant="8" symbolic="YES" id="Qd1-pZ-qgf"/>
-                            <constraint firstItem="dvy-Sb-Ymo" firstAttribute="bottom" secondItem="HJi-6E-GU8" secondAttribute="bottom" constant="-20" id="eQv-gw-qa7"/>
-                            <constraint firstItem="dvy-Sb-Ymo" firstAttribute="leading" secondItem="HJi-6E-GU8" secondAttribute="leading" constant="20" id="plw-fN-X9n"/>
                             <constraint firstItem="fdG-tZ-4eS" firstAttribute="top" secondItem="HJi-6E-GU8" secondAttribute="top" constant="56" id="que-0a-K5f"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="infectedLAbel" destination="fdG-tZ-4eS" id="mma-Ue-lhI"/>
                         <outlet property="infectedNumberLabel" destination="hhn-jw-5fx" id="RYZ-7F-1JZ"/>
-                        <outlet property="infoView" destination="dvy-Sb-Ymo" id="2Bd-Jr-ScB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VH2-n8-XN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -230,7 +204,6 @@
     <resources>
         <image name="1000_F_171260534_euLc1dBokyKDHvldjrjAaIRb7oTll5fF" width="1000" height="943"/>
         <image name="red-cartoon-circle-button-png" width="360" height="360"/>
-        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
