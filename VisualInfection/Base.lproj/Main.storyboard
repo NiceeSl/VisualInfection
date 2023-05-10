@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ofont.ru_Pixeloid Sans.ttf">
+            <string>PixeloidSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Input Screen Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="InputScreenController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InputScreenController" customModule="VisualInfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="756" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dA0-Jf-rqM">
+                                <rect key="frame" x="187" y="282.33333333333331" width="40" height="34"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="754" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8s-UF-zz2">
+                                <rect key="frame" x="181" y="191" width="52" height="34"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Number of people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lO-LB-l0Q">
+                                <rect key="frame" x="130.66666666666666" y="151" width="152.99999999999997" height="20"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="757" text="simulate infection" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Sl-7nR">
+                                <rect key="frame" x="41.666666666666657" y="88" width="330.66666666666674" height="43"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="755" text="Infection factor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmZ-dP-4bM">
+                                <rect key="frame" x="141.66666666666666" y="244.33333333333334" width="138.99999999999997" height="21.000000000000028"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zcd-AE-pzx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Un-zK-h6t">
+                                <rect key="frame" x="187" y="365" width="40" height="34"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Number of people* - the number of all people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kg-2V-bdx">
+                                <rect key="frame" x="87" y="407" width="305" height="13"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="10"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infection factor* - how much can an infected person infect" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogb-l8-ULi">
+                                <rect key="frame" x="87" y="428" width="321" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="va7-rL-F7Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="10"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating period* - how often to refresh the screen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-WJ-MXt">
+                                <rect key="frame" x="87" y="462" width="278" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Yag-At-0S5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="10"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-cartoon-circle-button-png" translatesAutoresizingMaskIntoConstraints="NO" id="2Kj-kR-W48">
+                                <rect key="frame" x="27" y="711" width="360" height="360"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="756" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIe-2U-9te">
+                                <rect key="frame" x="133" y="768" width="148" height="36"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Launch"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Launch">
+                                    <fontDescription key="titleFontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="launchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQx-Pj-Y4g"/>
+                                    <segue destination="I3Y-4n-a4H" kind="presentation" identifier="segueToInfectionController" modalPresentationStyle="fullScreen" id="iX0-FK-DEL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1000_F_171260534_euLc1dBokyKDHvldjrjAaIRb7oTll5fF" translatesAutoresizingMaskIntoConstraints="NO" id="p5x-eg-stV">
+                                <rect key="frame" x="79" y="491.66666666666669" width="256" height="239.33333333333331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating period (sec)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y58-GE-zgg">
+                                <rect key="frame" x="120.99999999999999" y="324" width="239.66666666666663" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="tBg-xT-UKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Kg-2V-bdx" firstAttribute="top" secondItem="7Un-zK-h6t" secondAttribute="bottom" constant="8" id="1Se-It-TpW"/>
+                            <constraint firstAttribute="bottom" secondItem="2Kj-kR-W48" secondAttribute="bottom" constant="-175" id="4Xz-Z4-RpQ"/>
+                            <constraint firstItem="bIe-2U-9te" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="53s-ZD-vwL"/>
+                            <constraint firstItem="hE1-Sl-7nR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="9K5-xH-Hoc"/>
+                            <constraint firstItem="oXd-WJ-MXt" firstAttribute="top" secondItem="ogb-l8-ULi" secondAttribute="bottom" constant="8" id="BHg-Aa-RxA"/>
+                            <constraint firstItem="ogb-l8-ULi" firstAttribute="leading" secondItem="2Kg-2V-bdx" secondAttribute="leading" id="Dd5-ya-Qja"/>
+                            <constraint firstItem="oXd-WJ-MXt" firstAttribute="leading" secondItem="ogb-l8-ULi" secondAttribute="leading" id="F15-Qq-LXk"/>
+                            <constraint firstItem="2Kg-2V-bdx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="FUu-aB-mpM"/>
+                            <constraint firstItem="Q8s-UF-zz2" firstAttribute="centerX" secondItem="2Kg-2V-bdx" secondAttribute="centerX" constant="-32.5" id="Fib-fK-ImU"/>
+                            <constraint firstItem="Q8s-UF-zz2" firstAttribute="centerX" secondItem="WmZ-dP-4bM" secondAttribute="centerX" constant="-4" id="Frj-2j-6da"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oXd-WJ-MXt" secondAttribute="trailing" symbolic="YES" id="LDX-d8-Vko"/>
+                            <constraint firstItem="bIe-2U-9te" firstAttribute="top" secondItem="p5x-eg-stV" secondAttribute="bottom" constant="37" id="PGR-kn-bZv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bIe-2U-9te" secondAttribute="bottom" constant="58" id="RbF-oh-PEQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ogb-l8-ULi" secondAttribute="trailing" constant="6" id="RvT-rI-Cli"/>
+                            <constraint firstItem="ogb-l8-ULi" firstAttribute="top" secondItem="2Kg-2V-bdx" secondAttribute="bottom" constant="8" symbolic="YES" id="SWu-L6-XgU"/>
+                            <constraint firstItem="7Un-zK-h6t" firstAttribute="top" secondItem="y58-GE-zgg" secondAttribute="bottom" constant="3" id="XXn-Fz-34H"/>
+                            <constraint firstItem="p5x-eg-stV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="YV9-8I-O2I"/>
+                            <constraint firstItem="dA0-Jf-rqM" firstAttribute="centerX" secondItem="bIe-2U-9te" secondAttribute="centerX" id="Yt9-uG-IYG"/>
+                            <constraint firstItem="6lO-LB-l0Q" firstAttribute="top" secondItem="hE1-Sl-7nR" secondAttribute="bottom" constant="20" id="ZYy-Ws-5Gp"/>
+                            <constraint firstItem="p5x-eg-stV" firstAttribute="centerX" secondItem="WmZ-dP-4bM" secondAttribute="centerX" constant="-4" id="a3E-I5-Xzw"/>
+                            <constraint firstItem="2Kj-kR-W48" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aIn-kb-nTB"/>
+                            <constraint firstItem="y58-GE-zgg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="anv-fa-dTe"/>
+                            <constraint firstItem="y58-GE-zgg" firstAttribute="centerX" secondItem="7Un-zK-h6t" secondAttribute="centerX" constant="33.833333333333343" id="c5k-ue-Jzz"/>
+                            <constraint firstItem="6lO-LB-l0Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dUY-zg-ddS"/>
+                            <constraint firstItem="hE1-Sl-7nR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dv7-pa-WCR"/>
+                            <constraint firstItem="Q8s-UF-zz2" firstAttribute="top" secondItem="6lO-LB-l0Q" secondAttribute="bottom" constant="20" id="h3o-RP-d7G"/>
+                            <constraint firstItem="bIe-2U-9te" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="iez-KU-4nq"/>
+                            <constraint firstItem="dA0-Jf-rqM" firstAttribute="centerX" secondItem="y58-GE-zgg" secondAttribute="centerX" constant="-33.833333333333343" id="liG-x8-Bud"/>
+                            <constraint firstItem="p5x-eg-stV" firstAttribute="top" secondItem="oXd-WJ-MXt" secondAttribute="bottom" constant="7.6666666666666856" id="pyC-Do-og8"/>
+                            <constraint firstItem="WmZ-dP-4bM" firstAttribute="top" secondItem="Q8s-UF-zz2" secondAttribute="bottom" constant="19.333333333333343" id="t7n-su-ACA"/>
+                            <constraint firstItem="2Kg-2V-bdx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="32.5" id="u6c-fY-OFj"/>
+                            <constraint firstItem="y58-GE-zgg" firstAttribute="top" secondItem="dA0-Jf-rqM" secondAttribute="bottom" constant="7.6666666666666856" id="vxM-hW-scK"/>
+                            <constraint firstItem="dA0-Jf-rqM" firstAttribute="top" secondItem="WmZ-dP-4bM" secondAttribute="bottom" constant="17" id="ylX-nw-lz0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8iK-wl-Uzl"/>
+                    <connections>
+                        <outlet property="groupSizeField" destination="Q8s-UF-zz2" id="jRd-xd-57T"/>
+                        <outlet property="infectionFactorField" destination="dA0-Jf-rqM" id="fgW-su-MLb"/>
+                        <outlet property="periodField" destination="7Un-zK-h6t" id="I0t-i2-DLN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.33587786259534" y="-6.3380281690140849"/>
+        </scene>
+        <!--Infection Controller-->
+        <scene sceneID="rvh-OL-iEw">
+            <objects>
+                <viewController storyboardIdentifier="InfectionController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I3Y-4n-a4H" customClass="InfectionController" customModule="VisualInfection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWe-43-QgH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="InfoView" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-Sb-Ymo" customClass="InfoView" customModule="VisualInfection" customModuleProvider="target">
+                                <rect key="frame" x="20" y="658" width="374" height="218"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uS-uT-QYb">
+                                        <rect key="frame" x="320" y="8" width="46" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
+                                            <color key="baseForegroundColor" red="1" green="0.27843138579999999" blue="0.270588249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backAction:" destination="I3Y-4n-a4H" eventType="touchUpInside" id="l5S-Ua-iuv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5411764979" green="0.5411764979" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="9uS-uT-QYb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dvy-Sb-Ymo" secondAttribute="leading" constant="20" symbolic="YES" id="41Y-ha-aW4"/>
+                                    <constraint firstItem="9uS-uT-QYb" firstAttribute="top" secondItem="dvy-Sb-Ymo" secondAttribute="topMargin" id="Fcz-bN-2tk"/>
+                                    <constraint firstItem="9uS-uT-QYb" firstAttribute="trailing" secondItem="dvy-Sb-Ymo" secondAttribute="trailingMargin" id="mH0-wi-G77"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-tZ-4eS">
+                                <rect key="frame" x="158" y="56" width="98" height="25"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhn-jw-5fx">
+                                <rect key="frame" x="264" y="56" width="65" height="25"/>
+                                <fontDescription key="fontDescription" name="PixeloidSans" family="Pixeloid Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HJi-6E-GU8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HJi-6E-GU8" firstAttribute="trailing" secondItem="hhn-jw-5fx" secondAttribute="trailing" constant="85" id="13Y-AV-Irw"/>
+                            <constraint firstItem="hhn-jw-5fx" firstAttribute="top" secondItem="HJi-6E-GU8" secondAttribute="top" constant="56" id="1Wo-91-SDi"/>
+                            <constraint firstItem="HJi-6E-GU8" firstAttribute="trailing" secondItem="dvy-Sb-Ymo" secondAttribute="trailing" constant="20" id="3Xk-ae-c8e"/>
+                            <constraint firstItem="fdG-tZ-4eS" firstAttribute="centerX" secondItem="HJi-6E-GU8" secondAttribute="centerX" id="4sV-4E-43n"/>
+                            <constraint firstItem="dvy-Sb-Ymo" firstAttribute="top" secondItem="HJi-6E-GU8" secondAttribute="top" constant="658" id="Gdd-B0-Y6d"/>
+                            <constraint firstItem="hhn-jw-5fx" firstAttribute="leading" secondItem="fdG-tZ-4eS" secondAttribute="trailing" constant="8" symbolic="YES" id="Qd1-pZ-qgf"/>
+                            <constraint firstItem="dvy-Sb-Ymo" firstAttribute="bottom" secondItem="HJi-6E-GU8" secondAttribute="bottom" constant="-20" id="eQv-gw-qa7"/>
+                            <constraint firstItem="dvy-Sb-Ymo" firstAttribute="leading" secondItem="HJi-6E-GU8" secondAttribute="leading" constant="20" id="plw-fN-X9n"/>
+                            <constraint firstItem="fdG-tZ-4eS" firstAttribute="top" secondItem="HJi-6E-GU8" secondAttribute="top" constant="56" id="que-0a-K5f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infectedLAbel" destination="fdG-tZ-4eS" id="mma-Ue-lhI"/>
+                        <outlet property="infectedNumberLabel" destination="hhn-jw-5fx" id="RYZ-7F-1JZ"/>
+                        <outlet property="infoView" destination="dvy-Sb-Ymo" id="2Bd-Jr-ScB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VH2-n8-XN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771.0144927536232" y="-6.6964285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1000_F_171260534_euLc1dBokyKDHvldjrjAaIRb7oTll5fF" width="1000" height="943"/>
+        <image name="red-cartoon-circle-button-png" width="360" height="360"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
